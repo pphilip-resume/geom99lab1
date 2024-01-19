@@ -1,1 +1,648 @@
-Remove this text and paste your JSON results from the Directions API
+/*https://maps.googleapis.com/maps/api/directions/json?departure_time=now&origin=place_id:ChIJX0NrbKErBjsRbtCNj_YCK74&destination=place_id:ChIJb0qPdIIICDsRWISWXeTrsjA&avoid=ferries&waypoints=via%3A9.670730%2C76.558041%7Cvia%3A9.990074%2C76.579057&key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE*/
+{
+   "geocoded_waypoints" : 
+   [
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJX0NrbKErBjsRbtCNj_YCK74",
+         "types" : 
+         [
+            "locality",
+            "political"
+         ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJAXh9-XrTBzsRAZBWJaQ5ghk",
+         "types" : 
+         [
+            "establishment",
+            "finance",
+            "point_of_interest",
+            "store"
+         ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJqd6y7WPnBzsRURdFP9rj_hw",
+         "types" : 
+         [
+            "premise"
+         ]
+      },
+      {
+         "geocoder_status" : "OK",
+         "place_id" : "ChIJb0qPdIIICDsRWISWXeTrsjA",
+         "types" : 
+         [
+            "airport",
+            "establishment",
+            "point_of_interest"
+         ]
+      }
+   ],
+   "routes" : 
+   [
+      {
+         "bounds" : 
+         {
+            "northeast" : 
+            {
+               "lat" : 10.170723,
+               "lng" : 76.59683219999999
+            },
+            "southwest" : 
+            {
+               "lat" : 9.591655099999999,
+               "lng" : 76.3897132
+            }
+         },
+         "copyrights" : "Map data ©2024",
+         "legs" : 
+         [
+            {
+               "distance" : 
+               {
+                  "text" : "87.9 km",
+                  "value" : 87909
+               },
+               "duration" : 
+               {
+                  "text" : "2 hours 21 mins",
+                  "value" : 8457
+               },
+               "duration_in_traffic" : 
+               {
+                  "text" : "2 hours 1 min",
+                  "value" : 7244
+               },
+               "end_address" : "Cochin International Airport (COK), Airport Rd, Kochi, Kerala 683111, India",
+               "end_location" : 
+               {
+                  "lat" : 10.159196,
+                  "lng" : 76.3897132
+               },
+               "start_address" : "Kottayam, Kerala, India",
+               "start_location" : 
+               {
+                  "lat" : 9.591655099999999,
+                  "lng" : 76.522104
+               },
+               "steps" : 
+               [
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.7 km",
+                        "value" : 733
+                     },
+                     "duration" : 
+                     {
+                        "text" : "2 mins",
+                        "value" : 111
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.596826099999999,
+                        "lng" : 76.5248555
+                     },
+                     "html_instructions" : "Head \u003cb\u003enorth\u003c/b\u003e on \u003cb\u003eBaker Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eMC Rd\u003c/b\u003e toward \u003cb\u003ePost Office Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eSreenivasa Iyer Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow MC Rd\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Abe Services - Study Abroad Consultants (on the left)\u003c/div\u003e",
+                     "polyline" : 
+                     {
+                        "points" : "{jpy@cv`rMQ?O?Y@O@W@Y@Y@U?S?KCe@a@OKOMOMOKKY_@i@MQGGMIKESC[IEASGo@Ic@Aa@@S@_@Dy@Fq@BA?]@UEYMUWYYe@o@a@g@KOGGQYGQGSGUG]EMCKAO?I"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.591655099999999,
+                        "lng" : 76.522104
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "9.8 km",
+                        "value" : 9825
+                     },
+                     "duration" : 
+                     {
+                        "text" : "18 mins",
+                        "value" : 1061
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.670522399999999,
+                        "lng" : 76.557644
+                     },
+                     "html_instructions" : "At the roundabout, take the \u003cb\u003e1st\u003c/b\u003e exit and stay on \u003cb\u003eMC Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by CSB Bank Kumaranelloor (on the right in 4.2 km)\u003c/div\u003e",
+                     "maneuver" : "roundabout-left",
+                     "polyline" : 
+                     {
+                        "points" : "ekqy@kgarMA??AAA?A?A?A?ACEEKGICMGGGWKW_@cAOy@Ig@MkBCe@?E?I?I@M@Q@S?G?IAIAECIGSYQk@_@c@YWO?AsAaAKIKMoAqBIMa@k@OOEECE_@i@MUK[c@gCCWGa@AIG[CGCIEIIIOMIEICICeAU}AYq@Me@Ik@MYGWGc@G]EOAMAKAK?M@m@Bw@B]Bk@?[?oB?gACs@?[@W@oBRsAPI@aANi@FWDI?MDO@[AKAKASGGCc@Se@U}@e@w@_@KGs@YaAc@k@Yg@UQG_@Q_@SOGQK]MMGOCOCOCQAQ?Q?Q?G@YBe@Fo@LcAXQF{@T_@PwBdAu@\\GBIDQDWBUBo@Fc@BK@U@[?W@S?CAU?]AOAa@Eg@GcBOuGgAaAQ[EYIe@OyAk@k@Uo@YeAc@WKqAg@sB_AIEiAi@[QUMIGGGSQY_@a@q@So@]aASc@K]e@w@A?KOcAaAc@a@oAwAk@w@IMcAmAo@m@]]]Y[Q{@g@KE_Ae@y@a@_@Uw@e@yBeAk@Uo@Ye@Sk@U}Aq@o@_@OIKI[SSO]YUSu@i@WSQKOIYOQCcAW{A]iCi@oCi@OGICMI_Ay@[YIIKGOIQGSISEQEKAQ?e@Ai@Am@?YAMCEAECCAEEmBkBg@k@UQIGIEGEICIAKAa@CQ?W?gA?U?[@g@BW@uBHw@BMAi@AI?Q?eACeAAc@Cy@AY?u@DyCVcBN[BI@MAOAG?OCSGMEMEQKQOECCEIIOQ]i@UWUWKKKI?AECIEIGCAQGGCQE[GUEQCMAe@COA[E[IUIs@[}CwA_Bs@OIs@]wAu@QIIG_@UWQEE]U]U_@W]U]U]WSMIGMIi@_@UQKIoAy@u@i@_As@eBkA{@e@s@W}@_@mAa@qBm@mA[q@S]IYEk@GeCQk@AaBIu@EM?WA}@EWAWAk@CKA[AS?G?[?A?g@@_CRsALc@D[BSBQ?E?oAA[A[BQB}@z@MN[V[T[Lq@Va@PQFCBSH_@HK@K@G?O?UAQEMEGCIEeAq@OIKKQKe@]IEIIIIMKMKKMYYQOCGGEIGIEMEeA[_@KWEOGEAOG_@QSKYUCECCECGIIKAAKWUu@EUI[c@cACEEEOQe@Y}@e@o@[g@SA?MCM?KAO?eBAg@@KAI?OASEMCOEMEOG_@SuAy@g@WuB_AeAo@w@[_@Ow@_@QOYYSYUYg@q@i@u@eAyBOKA?GKQ]W_@o@y@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.596826099999999,
+                        "lng" : 76.5248555
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.3 km",
+                        "value" : 267
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 48
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.6709306,
+                        "lng" : 76.5599242
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eright\u003c/b\u003e at Ettumanoor onto \u003cb\u003eEttumanoor - Erattupetta - Poonjar Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eEttumanoor - Pala - Poonjar Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003ePala Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003ePattithanam - Manarcadu Byp Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by INDUSTRIAL ESTATE-ETTUMANOOR (on the left)\u003c/div\u003e",
+                     "maneuver" : "turn-right",
+                     "polyline" : 
+                     {
+                        "points" : "ww_z@gtgrMUUNIBK@G@O?E@MY_C{@oF"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.670522399999999,
+                        "lng" : 76.557644
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.3 km",
+                        "value" : 288
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 56
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.673463699999999,
+                        "lng" : 76.5593976
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at Peroor Junction Bus Stop onto \u003cb\u003eKovilpadam Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eTemple Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Chefs Institute Of Hotel Management (on the left)\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "iz_z@obhrMQ@Q@{@Ho@HsAPu@H_Fr@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.6709306,
+                        "lng" : 76.5599242
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.1 km",
+                        "value" : 98
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 24
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.673447899999999,
+                        "lng" : 76.55850989999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at Office of CD Anilkumar,LIC customer care center onto \u003cb\u003eKovilpadam Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Shilpa ladies store (on the left)\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "cj`z@g_hrMCL?L?N?R@b@?HBbA"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.673463699999999,
+                        "lng" : 76.5593976
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.3 km",
+                        "value" : 341
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 54
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.6705475,
+                        "lng" : 76.55779579999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at Adhi fashions onto \u003cb\u003eMC Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003ePattithanam - Manarcadu Byp Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eVaikom Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow MC Rd/\u003cwbr/\u003ePattithanam - Manarcadu Byp Rd\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Designers And Contractors (on the right)\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "aj`z@uygrMzAKb@CF?F?N?Z?ZBTDPD@?z@Tf@PpAb@PDXHRFf@Pb@V"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.673447899999999,
+                        "lng" : 76.55850989999999
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "1.7 km",
+                        "value" : 1677
+                     },
+                     "duration" : 
+                     {
+                        "text" : "3 mins",
+                        "value" : 203
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.6850062,
+                        "lng" : 76.5568155
+                     },
+                     "html_instructions" : "Make a \u003cb\u003eU-turn\u003c/b\u003e at Christeena Kurian\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow MC Rd/\u003cwbr/\u003ePattithanam - Manarcadu Byp Rd\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by INDUSTRIAL ESTATE-ETTUMANOOR (on the left)\u003c/div\u003e",
+                     "maneuver" : "uturn-right",
+                     "polyline" : 
+                     {
+                        "points" : "}w_z@gugrMJLEPUUWQMGm@WQIECOKqAc@g@Q{@UA?QEUE[C[?O?G?G?c@B{AJ]BI@e@ByCTuDZ}BR_@DC?iBTYDK@yAPc@DoALeAJ{@HoAHk@Bo@@_B@qACa@?S?{BCo@?{@@W@U@g@DuAHk@HaBTUDgAR_BVw@PMFMFSHKB"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.6705475,
+                        "lng" : 76.55779579999999
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "9.1 km",
+                        "value" : 9105
+                     },
+                     "duration" : 
+                     {
+                        "text" : "13 mins",
+                        "value" : 755
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.7582048,
+                        "lng" : 76.56124989999999
+                     },
+                     "html_instructions" : "At the roundabout, take the \u003cb\u003e2nd\u003c/b\u003e exit onto \u003cb\u003eMC Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by D' Architects (on the left)\u003c/div\u003e",
+                     "maneuver" : "roundabout-left",
+                     "polyline" : 
+                     {
+                        "points" : "irbz@cogrM?@?@A@?@A@A@?@A@A@A@A@A?C@A?A?A@A?C?A?A?AAC?A?AAA?AAAAAAA?AAAA?AAC?AAA?A?AAC?A?A@A?C?A@A?A@ASE]KSEYCWGa@Ka@GyB]kBU]GaAQ]EKCOCu@QSKMMOQGMIYOYCGGIYWGEICUEOGSI]MWMQIOKKK]YSOUKYCWAQAIAE?K?MC{A[aASw@IkBU[Ea@Gi@Gy@Kg@Eg@AW@_@BUBC?C@GBKHEFCJGVETEZEPENGLGHOJKHGBI@Y@Y?Q?O?cA?_@?aAA{@@w@FO?WFcARkBd@QDMDe@No@TIDMHIHILENCP?PBTHVFb@@TAXGTM\\_@r@]n@QXCBOPEBEBUFKBO@QAKAMESG]K]ISEICCASEcAOm@Ic@Ee@CqAEi@AQ?S@w@HQDOFQJSLUNONOPSZILKRGLELGHKJEFEDKHKDMDSDu@He@Da@Dg@F_@BYBS@S?G@g@C]G]Ie@MMEGCg@OE?YC[?C?SBUBWLSLUTOZK\\IXENIJOPONSJODSDeDJC?QCOCMESGQKSGUI[EQ?O@UDUFGAGAEACCCGEMAIAGAc@GkCIeDAUCSEOAIGIEEGGIC]Qy@YcA_@sBy@UKg@Sy@]]Om@UaAYiAc@iAc@WIECc@MOEcAOsB]i@I_B]uAOoF{@{@QC?[G_@IwAMq@Eg@C]E]GcAOe@Kg@Me@Og@Qm@Qg@MYEUCeAQq@IgAKOCOCOGQEWE_@KQCME[KOCUCUAaDLU@a@BE?W@S?U?KAQA]GcASGCKCy@SQEOCOCI?CAUAo@CeAEsAGUAoAGiBGK?QAYAuAIQAQAQ@u@LsATC@iAR]Hc@Fo@LWDUDI@G?A?YBg@@[?QAKAWCOEGAQGOI[QWOe@W[QYKMEMCMCUC]@AAQ?_@A]@wAD_ABQ?q@Au@AkBFa@@_DLaABoAFQ@s@FQ@eAJc@Hg@AUFmAVy@NcATe@Je@R_@TQLu@f@e@ZE@oA^m@R[H[D_@D_@?iAEGA[Ce@Io@Oo@Q_A]gAa@c@WGCOK[Qo@Ya@OKGYGCA]EgBQg@EIAs@EQ?Q@c@Fa@J_@LE@IB_Bf@aA\\E@]HG@UDK@G@[?_@?e@Ce@I[Is@Og@OqA_@QCm@Oi@Ma@Io@QOAUCe@A_B?oAAy@?}AAM?a@Ac@?cCCgA?IAS?W@m@DqBRqBPQ@M@wBLyAHWBa@FqALU?]AK?g@OUKECEECI"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.6850062,
+                        "lng" : 76.5568155
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "15.2 km",
+                        "value" : 15197
+                     },
+                     "duration" : 
+                     {
+                        "text" : "21 mins",
+                        "value" : 1246
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.858654599999999,
+                        "lng" : 76.59426100000002
+                     },
+                     "html_instructions" : "At ANN MARIYA ENTERPRISES, continue onto \u003cb\u003eMC Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by the park (on the right)\u003c/div\u003e",
+                     "polyline" : 
+                     {
+                        "points" : "w{pz@yjhrMs@c@_A_A}@}@GI_@a@GGY[CCUQUOKIAAMGOG]K_@I{@UGCOK[Wi@s@KQMYAA_@{@MYe@eA{@yBGOo@wA_CyEg@e@}Bi@iEaBWKmAe@cAc@q@Us@Ue@OYEGAqAUcFk@o@Ey@Em@Gk@Gs@MWCUCQCICQEQGUQSUq@y@]m@USQQu@i@QIc@W[Oe@[s@i@?AMIAAMMKIIKCEGQESCWEUGa@EMGGIKQOKEm@IWAWE[Is@SUG[MUESAY@w@Hm@D[@WCMAMGUMAAs@m@s@k@u@i@EE_@W]UOMOGKGMEMEOAY?C?U?Y?YCUEMKQWSa@]o@EIIKKKECUQAAgAa@GCgBw@_@SWSQMQMA?[_@EGIOS[O[IKIIUOSIm@EKC]Ee@CAAkACWAm@Cy@GMCKCKEOIc@]m@i@wBuBSOg@c@IIe@_@EGMKe@[o@YmEmAmA]_AU_@Gs@Iq@K}AUwAUw@KCAmC[kAQM?M?M?K@MBQBWHu@ZE@MFE@KBKBUB_@F}AZ_@J[NYPcAn@w@f@a@T{@b@IFMHIHKJCBCDCHCHAJ?LBRR|@DNBR@LAPANCJCPe@rBADGLGNILEF[XGD[ZKHMLKJKLe@l@i@n@A?k@n@g@n@e@h@QTKLg@j@A@UTGDIBA?EBIBI@K?G?MEg@WIEUKKEIA}AOaBGk@CWAI?GAi@Gw@EMAM?e@C[?{@Dc@COASE{@UIA_@KcCo@e@KSCc@G[GECEAGAECA?[Oy@e@[IUEWAU?G?M@_BP]D]@Q?QCQCQA]GYCeAMo@KKAKE[MICKCMCI?K?M?O?m@Bo@D_@?]C_@E}@Mo@IqAMG?]A]A[A]B}@DQ@u@Dg@BY?M?QCGAoAOMAgC]g@Go@Gi@Gi@Gg@KSOcA_BMS_@s@?A]cASaAGKGEKGICGAKAM?kABg@?SA]M]Ye@u@I[AI?O@OBONeATaABU@KAGAMEKACCC?AAACCCCC?EAEAo@Gi@GGA[GGEGC?AKOCKCO?S?SE[CWC_@ACEWGWEKCAACAAGEKEe@SOGk@[_@So@_@IGi@c@_@Qc@Ye@]YWIKGMGS?WHYL_@Va@bAeBRWFIP]N[DQ@[AMAKEMACCGKMEEGGAAKEICMGQGq@S_@Kw@KCA]?Q?o@@WAOAGEIGG]AK@CLc@Zy@h@mBDU@OAQ?IAGCGEIQSQOk@[u@_@_@?G@KBOHKHQJyBhB_@Ra@Ro@Ti@NYFm@Lm@Dk@@i@?OBgAFK@MDGDIHMTENCLAFAJAP?TCVKPKNA@EBC@G@I?IAIAKEg@WGEo@_@e@YUIe@Kc@Ce@?UB[Bk@Lu@Ru@Vo@^{@h@UPCBi@b@]Tc@Ve@Pa@Nw@Zg@PUHEBGDONKLQ\\a@v@[b@QRGDSFK@K?ECECCCAECGAM?E@KDOFSH[Pk@X{@ZeAPm@L]BEJORS^Uh@]`@]JIdA_A^e@BG@A?C@EAG?EAECEEGIIIGIEKGGGEEEKEMAKASDQFSDMFMJMRYTa@BKBM?M?MAMEKGKIGII[K_AQOCcBUc@KuB{@_CuAk@i@W[MSGKAGAKAIBUDMDQDODU@Q?GAMESKYM]OYGMEEKGKEIACAw@Ee@?]AOCUI[Ka@WEEOYQa@Qk@E]Ce@@k@Ek@AOGQEGIKIEMI}@i@o@]g@WUISAM?K@MBG@C@SFg@N[N_A^s@\\IDe@Rk@TqBbAOFi@L[Fc@Ds@@wAAmA@oAPiAPq@Po@HgAD]DsAPm@LA?OBO@u@DKAEAGAKGKGKKYWYe@MWOS{@y@gAq@QISCYAkA@UDWFUHWLWP{@p@A@q@h@QJQFSHWFc@FsBJ}@DiBLcBL}ALsAJeDVOAaAPE@u@Nk@L]Da@Fi@Hg@Fg@BYAu@Ik@Oi@Us@_@MGMGSOOQQUUa@_@m@q@qAQUMM_@W[Kc@G[AOAa@@_@B[DWHMBQDs@RcAXm@PgAVe@BY?k@Cm@M]M[I}DcA{@]yAk@e@EaA_@k@Qi@Cc@AkAJa@Bk@Di@Cu@IsDy@qBi@w@Q"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.7582048,
+                        "lng" : 76.56124989999999
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "17.7 km",
+                        "value" : 17713
+                     },
+                     "duration" : 
+                     {
+                        "text" : "28 mins",
+                        "value" : 1650
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.989398699999999,
+                        "lng" : 76.5787862
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at \u003cb\u003eRamapuram Junction\u003c/b\u003e onto \u003cb\u003eAlappuzha - Madurai Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eMC Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003ePampady - Pangadapally Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow MC Rd\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by State Bank of India ATM (on the left in 350m)\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "qod{@cynrMa@Lo@Jm@Fa@@W@W?c@Eg@Gg@G]GQGSIQMUSOIIMMSQ]Q[GOSa@IQGM[g@GGKKa@UICSG[G[GC?eAWWGWCmAMWCKCKCSIOGWQMKIMMOWSOGMEOASAO?O@a@Jw@Jc@@o@Cm@IcAMqCWy@BmANiADmA?eAJ{A^gAb@c@LMBO@Q?U?_@?W?S@SBQBQDSHg@Pc@N]FYDo@Be@CUCSAQCUGUGUMSOWUUUQMe@a@SMUGa@G[?[@M?E@[B{@LiARe@Hg@JYFWHYL_@L[L[FSDU@SA]Cm@Ak@FM@]BU?kAL_AJu@To@XaAh@QJ[Po@Ti@Lq@JgAFu@G}BD]B[FE@YF[Lg@Rc@Rm@^QNMLU\\UZi@`Aq@fAOPOR]b@EBm@r@a@h@GJi@v@KPW\\KJ[RMHQFMFMBM@K@I?I?M?U?QAe@Iy@U}Ag@e@Q[KOCEAGAI?I@IBK@KDKDKFKJKJIHIJILk@|@c@j@[Zy@t@a@ZSJUJODUF]H_@JYFCBi@TMHA@QL_@TULMHo@Zc@PQNUPc@XQFSFSDOBU?M@QAOAMAiCc@k@Ie@F]NYNWJA@UDcAP_@JUFGBQHa@PYRWPQPMLQRIJGLENELCPGRIPGJKJWJUFA@SB[FYFKFSLOLIFA@i@r@WPQF[BE@KBKBKFGDGFIJGRMVGVEXSz@OXOX]b@a@Vm@^g@Tu@RmAN[GEAGGGEEGCMCM?I@K?C?IBQ@IBULk@BWB[@_@@kB?S?SGYKWMOMMOOc@WQGMCKCK?KAM?SBSDMBC@KD]Lk@TGBmAVmACu@Io@BE@A?[Da@JG@c@Nc@LYHeAXyAf@WHWPY`@]n@]\\KHSFE@SDi@@y@G_AEaADeAR}@TQJCDMLGLIZMTK\\Wh@W\\CFk@b@a@TOLWHg@Pk@Ls@FA?UFM@G@u@De@@]BQ@_AToATWD}@H[BM?M?w@GuAKc@A]AiAIE?[@a@D[DOByH~@oBVcBTkBTa@Du@JwBXA@{APu@F]?a@Io@OOCE?O@KBOB]L_@NaA\\UJQJOJKHKJKHKHKBO@W@SCQCQIGEIEQKSISGYQOQGICEg@wAOk@EMGKu@e@GGq@Sa@IGAa@Ic@E]AY?O@I?e@HwA^IBMDGBIDIFEFC@CDEFEFEDEDIHKBA?IBO@G@E?Q?IAM@ODEBIFIHEFCJILADADCPIPGXABc@~@OVUZWXCBu@l@]Zw@r@a@`@k@h@OLQLiAb@GBKDE@WNQLEBYPa@^]^WVA@UPSLMFQFMFQHUJ_@JWNMLKJKLGLKTSb@INGJKLCBKHQNEBEDGHENAX@d@?N?JAHAFCFGLCBUPEBKF_@Lm@Rq@Vk@VYJWHSFQDSFwAx@]PIFEFKHEHEHOZMXELCNETGz@Eh@CXK^Kf@Sv@EPIZGLEDGDKDODC@OBIAG?A?KAKCIA[Mg@u@IQGMEKEIACCGEIIGGCECEAECIAK@OBa@D_@F_@FSFMBMAKCICu@UuA_@SOGKGOCQAO?O?E@KAKCKEIQa@KUIQISGQIOGOGKEGCCCCKKSMUKc@QSIQIMIKEOIs@OYA[?YBmBVy@Lq@J{B\\u@LuE~@qATsC^UBYF_@@m@LUFUJ_@Rq@\\w@^]RGBc@Vy@h@QLaAt@MFC@SHUHk@JwAPa@DkAHy@Dm@B[?SAQGYOWSWSAAQOKOKOIYKa@GQGKIKe@g@SSSQ_@a@IKOKSKSKc@Qs@[YMYISGc@GUAU?YBY@YB]?a@?_@Aa@EOCEASGa@Me@OYMQIc@Y[SSIICIAK@IBUHqA~@WNaAj@g@ZYT[XIFYLQLs@b@a@XQHOHSHKDKBSDIBM@O@U@e@A[AaAGcCKoEUo@CgAAQ@K?M@MD[Je@POFa@LI@OCO?MAKAQCQIMGKKQYKOMQQQKE[EM?C?q@Bi@JQ@O?Y?SEICSKUKWKKGQGQK[KKCMEMOGSAQBSD[?UBO?IESCEU]SQYUWSKIMKOWMSKYI_@?K?S@wAAICGEKGIGGEC_@E_@@c@Jm@LWDUHQBI@G@I?EAEAGAIGQQOIICGAIAe@?QAKAGCIE?AGGEKESCOA[AOCGEGCAACGEEAUMGAIAG?g@@OBMDWPKJMJKN?@KN?@INCNCJAL?B?L@JBLBJ@NALGRAFEFEHKLGFKHIDKDMBO@M?K?OCSCEAQEUEMCKEKEIEKIEECCEGEIEIGIKQQ[GMACCGAGESEOCMCGCGCCCCECGACACAE?E?E@EBGBEBGDIHQNMHKFKDMBKAKCSGQIUSCA_@[SOSMSGUGc@Ic@IaAOk@IMCoAQa@GOAMCKCMCICOEICkAg@UIQI_@OWK[KGAIAG?E?C?G?E@KBMDGBGBoCbAA@OFODSDK@M@c@@M@Q@O@[FWHQBI@UDW@[Dm@JG@SFOB]F[FeAPOBE?QBUB[BO@O@O?K@c@E]?o@Ao@@k@@{AFI?QAKAGAGEIGKIEGYWEEU[IGSOCASMUQMCOGGEMEA?_@OOAQAOAI?a@BOBODSHSHID[Ne@V[RA@IFA@QRKFOJIFCBOXEHADCJCN?D?^@VAN?F@F?H?HAJANCPIZM\\GLKNGJKHIFGBGBMBO@QAQEKCMIQQMKKGMIYMYK_@OoBcAKCKAGAO@WDYJ[Ry@^g@Te@RA?QHWLm@\\[PWJ[FSDM@I?M?W@GAGA[Km@SQK{@g@MIm@_@[SGCECEC_@Y}@m@I?G?EA]G"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.858654599999999,
+                        "lng" : 76.59426100000002
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.2 km",
+                        "value" : 217
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 34
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.990536199999999,
+                        "lng" : 76.5773327
+                     },
+                     "html_instructions" : "At \u003cb\u003eNehru Cir\u003c/b\u003e, take the \u003cb\u003e2nd\u003c/b\u003e exit onto \u003cb\u003eNH85\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by THE COMPUTER STORE (on the left)\u003c/div\u003e",
+                     "maneuver" : "roundabout-left",
+                     "polyline" : 
+                     {
+                        "points" : "w`~{@mxkrMA@A?A@A?C?A?A?A?A?A?A?A?A?KH_@ZKHkBhBCFEHGTCNCZ?BCLE^"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.989398699999999,
+                        "lng" : 76.5787862
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.2 km",
+                        "value" : 226
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 77
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.989622599999999,
+                        "lng" : 76.57890809999999
+                     },
+                     "html_instructions" : "Make a \u003cb\u003eU-turn\u003c/b\u003e at Indian Oil Petrol Pump AMA Fuels\u003cdiv style=\"font-size:0.9em\"\u003ePass by Mega Studio ## (on the left)\u003c/div\u003e",
+                     "maneuver" : "uturn-right",
+                     "polyline" : 
+                     {
+                        "points" : "{g~{@iokrMQ@@[@K?A@OBUBUFUBGBEBCDIfBiBDG^a@RQ"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.990536199999999,
+                        "lng" : 76.5773327
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.5 km",
+                        "value" : 527
+                     },
+                     "duration" : 
+                     {
+                        "text" : "2 mins",
+                        "value" : 98
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 9.9912268,
+                        "lng" : 76.5754493
+                     },
+                     "html_instructions" : "At \u003cb\u003eNehru Cir\u003c/b\u003e, take the \u003cb\u003e5th\u003c/b\u003e exit and stay on \u003cb\u003eNH85\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Drphysio_rehabilitation (on the left)\u003c/div\u003e",
+                     "maneuver" : "roundabout-left",
+                     "polyline" : 
+                     {
+                        "points" : "cb~{@eykrMAC?A?A@C?A?A@A?A@A@A?A@A@A@ABA@?@A@?@?BA@?@@@?B?@?@@@@B?@@@@?@@@@@@@?@@@?@?B@@?@?@?BA@?@?BA@A@?@A@A@A@A@A@A?A@A?A@A?C?A?A?A?A?A?A?A?A?KH_@ZKHkBhBCFEHGTCNCZ?BCLE^Bt@?hB?@ARAJABABCDCF_@p@[`@aAjA"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.989622599999999,
+                        "lng" : 76.57890809999999
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "26.8 km",
+                        "value" : 26827
+                     },
+                     "duration" : 
+                     {
+                        "text" : "42 mins",
+                        "value" : 2530
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 10.170723,
+                        "lng" : 76.4293704
+                     },
+                     "html_instructions" : "Continue straight onto \u003cb\u003eMC Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003ePattimattom - Muvattupuzha Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eContinue to follow MC Rd\u003c/div\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by IRIS (on the right)\u003c/div\u003e",
+                     "maneuver" : "straight",
+                     "polyline" : 
+                     {
+                        "points" : "el~{@qckrMWR{@r@OJcAl@QBQHA@SJOJC@uAbAGDQPeCbC}@t@QNYPSHKBq@RMDm@Ny@Xi@Nk@JSD_@JkAVsAHa@B_@Bu@Fk@Dq@B}AHUBWBMBOBMB_@HQF{@XYHQHUDk@LQDI@QBa@BI?Y@q@@qACW@Y?O?Q@U@_@Bm@Hg@H_@DUDUDSBc@F[B[BYDQBU@]B_@@k@BUB[BSBQBUBWDc@FWDUD]FYFYDODKDGBIBMDYPWRYRk@b@UR]Xa@V_@VWNeAh@WJUHi@RQF]HSD]Ja@HYDkB\\eBXqAVKB}@P{@Pg@J]HMDODODa@No@Rc@N[Ji@Pa@J]JIBSDw@Pk@N[H]JOF[N]NMFyBzAgB|AwAlAQLKJUL[RSJWLy@\\w@`@a@T_@PYPSJ]Tq@^uA`Am@j@]\\WXQTEDW\\SZWb@INiA|Bs@tAaA~AYd@u@rAw@tAo@rAMVGNKRKLILML[VaAr@c@\\CBs@l@m@j@CBUR_@Z[VUNIDoAj@oAj@[PQNWTEBIHGFGFQRQRe@h@q@l@i@d@KHcAj@]TSNUNEDGDKNOPIRABMT?BKV[rAAB_@zAS~@Qh@CLIXc@nAa@dAe@fAe@bAg@bAg@dAUb@Sd@c@vA[z@M^MTGJIJSROJOJMHSJg@Vm@Ve@P_@NsA`@MDMD_@LgA\\}B|@y@\\C@g@Z]Vm@h@mB`B]Zc@^i@\\k@ZA@m@Xo@TQDWHWFy@RE@MDKFMFSROVMVWb@S\\WXURONk@l@e@j@W\\IJCDU\\Q^Wb@Uf@EJO^EHCFEJUj@e@pA?B]jAQl@Mf@Wp@Wd@OVOV[h@{@hAqAtBINQXo@`AQVKNOPGJWR]VWN?@WLEBMFWLuAn@A?q@b@c@\\EB{ArAc@`@eAbAm@j@OL_@\\}AvAQPKHu@r@_@d@MPMPq@bAi@|@Q\\]h@g@z@MPMLOHKDKDKDeBf@wCt@qBf@kBf@k@PWHOHWJULOJq@l@_@`@]\\WTMHMFKDCBIBIBGBGBSDQBq@JKBs@ToDd@SBMBkCVqBRc@DgBPsBT]BuANaANq@La@HSF]J_@LGB]NUJ[Nq@^a@Rg@V_@RQJIFQNSNSRONUTW\\o@v@m@x@k@t@c@v@KTEHCJCHCJCPANARAV?B?N?V@X@Z@XBX@Z?d@?\\Az@AVCRCLCHAFCHCBGNGHINSXCBURMLIFWVIJGFg@r@MTKLCDMNIDSLCBMFQFa@Lk@NQFA?QF]L_@Ri@^e@d@c@h@_@d@e@h@IJe@d@GHYVWTQNOLYR[T_@Va@RULYNQJEBMHMLUZm@v@UZcAtAW\\g@p@ADQZMTMXITA@KZMXKXKN?@MNKLOPMLm@f@IHiAbAEBc@^QLWPEDQHe@To@Ta@Ps@Vk@Vq@VA@[NUNMHa@\\[`@A@}AlCA@qAvBOVw@nAWf@EJQb@w@tBcAzBQ`@M`@Mv@EXAZCJKh@Mf@O^MXW`@ORKLq@hASVa@j@mAfB{@bAa@j@URC@OLSNy@j@}@j@]RSLGD_@TCBGDc@Z[PoFbD]R}CjBq@b@qD|Bc@Vk@\\IDUJKD_@LeCl@E@u@Pq@NkAXwJ~B{Bh@qAZ_ATWFkCn@{A^k@L[JIB[HOFQDGBGBKDGDIFKNKNIJEJMb@Wx@Ub@EDQTORQRo@h@_BrAyDfDaEnDeA~@kB|A_Ar@aA|@eB`BmAdAe@`@w@p@URML[XSPIHg@\\[TGDEBOHSH[NA@c@RQHGDMFMHUNa@Vo@d@WRWNQF]BK@K@_@B_@@]FQDKBUNA?_@Vk@h@EBcA|@[VoE`EaCrB{@t@gCxBg@j@CBKJ]XQNWRA@STKPIROd@GXCJM\\Qf@Wj@IR_@x@Uf@KRe@z@c@|@Sd@cAnBCBm@bAm@~@IJ}@nAyA`BMJKJg@j@C@Y^ORKNc@v@KPYj@[d@QVWVQPEDIFOHKFKFOHUHC@cAZqBl@c@NaD~@u@Xk@ROFUJo@^eAn@YN]R]Rg@ZMHk@Zy@f@i@\\sAr@a@ReAl@WNMHMDQH]Da@DuA?W@W@i@F_@Hc@LYLSP_@RqEfCCF?@GFIFg@ZMFYLKFIFMHq@`@]RC@?@C?E@A?]Po@^kBdASJ_Ap@WTA@y@p@c@^s@n@o@\\SLq@ZeBt@oBdAy@^A@eBz@YNaChA[LSJi@RQD]Du@FA?U@i@FyAHS@sF^G@oAHWB[@UAEA_@Gi@Sq@YSIm@UMCK?M?M@A@e@Jg@LoAZe@Ja@HSBQHMHIJKRMXKf@Qz@ITADINGJOPMJOHWH[HYF{@P]Hs@X]Js@Tu@TsBv@C@yBbAcAb@_Ab@iAl@aAb@]NaCdAoAh@g@TmB~@sCpAgAd@UNWP]\\]`@A@iDjEOP_@f@]`@_CpCqAbBUVWV[XcAj@s@b@UNQJoEpCKFwAx@A@iBfAGBa@VaBn@aBf@_Ct@SH{Bn@cAPy@RA?gBb@SFSJOLCBIJc@r@aBpCmAxBc@r@ABmAnBUb@W^eAhBkAnB[j@GHkCrEEFcAdBQVMTw@rAS^w@nAQZy@rAu@lAu@lAW^Y`@OPy@jAiAxA[b@IPu@z@aAjAUZWZKHe@l@sA~AsBfCqB`C{AjBe@l@i@n@kC|CGFuBbCEDa@f@kArAKLa@d@oAzAw@dAo@r@OPa@^OHQHQFSDQBSBsAD[DWDG@C@UHMD[NiAl@_BbAaAj@y@f@uAz@OHMHEB]PMFMH[R]P[R[Rw@f@QLMLGHIJWXEDEDMLIHEBKHYTODKFC@QHSHSHiBx@OFSJC@[P_@VOPKNKTOZO`@IXIREJKb@Qh@_BjEUn@k@zAo@|AKX{@tBe@fA[~@q@jBGNEPa@fAABGNgAtCk@bBCFy@|BM\\AD}A`EO^Ob@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 9.9912268,
+                        "lng" : 76.5754493
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "4.5 km",
+                        "value" : 4515
+                     },
+                     "duration" : 
+                     {
+                        "text" : "8 mins",
+                        "value" : 460
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 10.160466,
+                        "lng" : 76.39160529999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at IPCS onto \u003cb\u003eKariyad - Airport - Mattoor Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Komaki Bike Shop (on the left)\u003c/div\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "_na}@qrnqMh@vDDj@JrAB\\Bh@BbA@R@j@?F@b@B\\@RBLHn@Ht@N~@J~@BP@DJ`AFVLNNDRBJ?N@P?H@FB@@B@BDBBBFDTJpA@LBZDl@JzB@RTnA?@b@dBNf@@FZ~@@F\\hATx@b@tA@FDLBDV|@Rp@T|@\\rAXnAHX@BBPDZ@Z@|A@pA@hA@V?N?r@?j@?D?N?F?F@L?H@BBHDPNb@Xr@N`@Xv@Tv@Pd@DHDLTn@JXFNXr@BFTf@Pd@BJ@B@F@F@J?L@\\?b@?`@@b@?`@ClA?J@F@D@BBBB?@@B?@?B@p@AdDJF@@@FB@@HLNf@?@J^FNDPJb@J`@Jb@HVBJ^pARt@BHNj@Ld@Ln@DPBNFh@BX@P@`@@f@?JA\\?TAN?L?DAz@EnACPGXGZOf@O\\ABMb@O\\KVEJITCNCRCPAV?L?Z?Z?ZDr@HhBHfA@f@Bt@D^BVBJRdAZ~ALp@Nr@XlA?BFNJ`@T|@@DP~@RjAPfABN@JDLJRb@v@`@v@BDZt@Pd@ZbABJl@`CFX?@FZJd@@JFb@J|@D^D`@BR?@@TBPD\\DTFXJb@Tp@?@Nb@FPJXv@fAPVBDHNHL@H@F@D@F?JAR?BC`@Il@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 10.170723,
+                        "lng" : 76.4293704
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "86 m",
+                        "value" : 86
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 14
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 10.1597092,
+                        "lng" : 76.39154019999999
+                     },
+                     "html_instructions" : "Turn \u003cb\u003eleft\u003c/b\u003e at Cigarette store toward \u003cb\u003eAirport Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eDomestic Terminal Rd\u003c/b\u003e",
+                     "maneuver" : "turn-left",
+                     "polyline" : 
+                     {
+                        "points" : "}m_}@qfgqMJHH@VBV?^?\\@RC"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 10.160466,
+                        "lng" : 76.39160529999999
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "0.2 km",
+                        "value" : 235
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 30
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 10.1594459,
+                        "lng" : 76.3896422
+                     },
+                     "html_instructions" : "At the roundabout, take the \u003cb\u003e2nd\u003c/b\u003e exit onto \u003cb\u003eAirport Rd\u003c/b\u003e/\u003cwbr/\u003e\u003cb\u003eDomestic Terminal Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003ePass by Cochin International Airport (on the left)\u003c/div\u003e",
+                     "maneuver" : "roundabout-left",
+                     "polyline" : 
+                     {
+                        "points" : "ei_}@cfgqM@A@A@A@??A@?@?@?@??A@?@?@@@?@?@??@@?@@@??@@??@@@?@@@?@?@?@?@?@?@?@A@?@?@A??@A??@A@A?A@A?HrD@T@J@jAHv@"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 10.1597092,
+                        "lng" : 76.39154019999999
+                     },
+                     "travel_mode" : "DRIVING"
+                  },
+                  {
+                     "distance" : 
+                     {
+                        "text" : "32 m",
+                        "value" : 32
+                     },
+                     "duration" : 
+                     {
+                        "text" : "1 min",
+                        "value" : 6
+                     },
+                     "end_location" : 
+                     {
+                        "lat" : 10.159196,
+                        "lng" : 76.3897132
+                     },
+                     "html_instructions" : "At the roundabout, take the \u003cb\u003e1st\u003c/b\u003e exit onto \u003cb\u003eInternational Departure Rd\u003c/b\u003e\u003cdiv style=\"font-size:0.9em\"\u003eDestination will be on the left\u003c/div\u003e",
+                     "maneuver" : "roundabout-left",
+                     "polyline" : 
+                     {
+                        "points" : "qg_}@gzfqM@?@@@??@HK@A@AB?XA"
+                     },
+                     "start_location" : 
+                     {
+                        "lat" : 10.1594459,
+                        "lng" : 76.3896422
+                     },
+                     "travel_mode" : "DRIVING"
+                  }
+               ],
+               "traffic_speed_entry" : [],
+               "via_waypoint" : 
+               [
+                  {
+                     "location" : 
+                     {
+                        "lat" : 9.6707699,
+                        "lng" : 76.55794059999999
+                     },
+                     "step_index" : 5,
+                     "step_interpolation" : 0.9135799724277469
+                  },
+                  {
+                     "location" : 
+                     {
+                        "lat" : 9.9897674,
+                        "lng" : 76.578771
+                     },
+                     "step_index" : 11,
+                     "step_interpolation" : 0.9023191532203437
+                  }
+               ]
+            }
+         ],
+         "overview_polyline" : 
+         {
+            "points" : "{jpy@cv`rM_IiB}JeBwEoBgBsDMu@AG{BkOoK}KyDeKeQoBoVnAgO}FmIoAwQbFkYgEsMwFgDcEoOaSgWiMsUoIqK_D_I{Eae@AiEyDuTcIuJyGgPcJgOiCaRMkP~DyH]uE{D_H}CkIwIsPiEgOqOk@qCyBkJuFn@cF~ADdClFEhGhBpAhAiBgAqFkBmFD_`@nDu\\~@_JvBoLyCqIwEsHwCuSyBgC`EkRvAuCbBHzD}BxDoCOkOm@kExEiMJyCOwB`DsG`A{Cu@yAAc@_L}PyHut@gNiZiC}VQuK`A{HcCm\\`AkSjGkG?_I{CwN{@yF~AgGu@uVkBg\\|AcVwQwBiFuIaKyOyFmUsDmKaJq@qCuEqAwFIiFaDyGiBoTgOaGi@{HcH_`@iI{JvBoIrGkAjKiJlKyY}AkMoDaNWg]mAsLyD{BiFqESy@kFM}CyCu@W{CuGgF}CgDpD}GkCmDcF[x@gGWoBcEq@oJxE}F`@aB|D{DkByHp@yMrHkDbB`J_O]iCfAiGgRmJe@sGqD]sCyDk@yDgFsBmPdGaXvBsBuBuHgC_FzCaNnAgYhBsLqJkQxAmPsEcQ}AyNgAqG{GaKgDcXGsOnCmFR{DiCsNnAcRvCeT~DqK`OeKGoEVqLnIeJjEcOr@_F|FkHjDcGrIcFX?{A\\iHcCcCkMdAaNtGyI\\mCrCuKzEsSd@gc@rEyI~BuG_EwDsC}DEiEtBsCpAyJxLqIlFiF`F{ApE{LtFoCtLiEaBqESyEwAQkBaEmFyD_AmUvD_T~HmHjAsFw@wFkHsMaBaE}AaEj@qKpG{UYkDn@uB_BoIaAiHoQyGRmDgCyDUo@~DsCzAmDsBwAqCiDz@qWyHgS`EeMj@{G_CqG]mEvDu@fG}Eg@qF_BiF`CwDjAmE_B}FmCwD`Dq@~BXcCrDoEx@PeBnAiCnEIhFqM|K{QrJ{SdCa[lCyJvAmMpHkd@~KeTjNiQ~ToMnP{KrH}IhIuJlXuCzG}E~BmWlNgJzFkHnKuKjUaK`ImRhRyDpFwPtEeH~E}_@zEgMlFwHjLCvK_EpF}UnQsS~VkM`H}MlZ}KvQmVnOeg@nPiOnEoY`ZsQlO_JpE_VpPoJbMuOvWoHrJuU`JcQzIaHbA}HxEkLxGqYbPiVxBaNKyE~GkZfLqR~IuLzNgZbSyQ`FyGpJyS~]eq@v{@}GbHmEb@sQbKyR`OsMb^kFxN_CjG~@tIRjGdAlI|CvD`Kxm@pGdWThHxFb@lAtElCdOkBnMFtPvEzUfJf^lBbI~CF\\F~@jJ"
+         },
+         "summary" : "MC Rd",
+         "warnings" : [],
+         "waypoint_order" : []
+      }
+   ],
+   "status" : "OK"
+}
