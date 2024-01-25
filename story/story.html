@@ -1,12 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <title>Advanced Marker Accessibility</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>"
+    <script src="https://use.fontawesome.com/releases/v6.2.0/js/all.js"></script>
     <script>
       const process ={env:{}};
       process.env.GOOGLE_MAPS_API_KEY=
-      "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg";
+      "AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51Au";
     </script>
     <style>
       #map {
@@ -16,65 +17,95 @@
           /* 
           * Optional: Makes the sample page fill the window. 
           */
+          /* CSS given for the elements in the internal CSS */
       html,body {
             height: 100%;
             margin: 0;
             padding: 0;
           }
-      .heading{
-        font-size: large;
+      #heading{
+        font-size: xx-large;
         color: blue;
+        text-align: center;
+        margin-top: 1%;
+        font-weight: bold;
+        font-style: italic;
+      }
+      .para{
+        font-family: 'Lucida Sans',  sans-serif;
+        font-size: medium;
+        text-align: center;
+      }
+      .title{
+        font-style: italic;
+        font-family:Verdana, sans-serif;
+        color: blueviolet;
+        font-size:small;
+        text-align: center;
+      }
+      .paragraph{
+        color: brown;
+        font-size: small;
         text-align: center;
       }
     </style>
 <script>
   async function initMap() {
-  // Request needed libraries.
+  // Request needed libraries.Markers are also imported.
   const { Map, InfoWindow } = await google.maps.importLibrary("maps");
   const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
     "marker",
   );
+  // zoom, center for the map is defined 
   const map = new Map(document.getElementById("map"), 
   {
     zoom: 10,
-    center: { lat: 43.386397, lng: -80.300775 },
+    center: { lat: 43.298491, lng: -80.469251 }, 
     mapId: "4504f8b37365c3d0",
   });
-  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
+  // Set LatLng and title text for the markers. The first marker (Toronto )
   // receives the initial focus when tab is pressed. Use arrow keys to
   // move between markers; press tab again to cycle through the map controls.
-  //https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility (multiple markers)
+  //Source: https://developers.google.com/maps/documentation/javascript/examples/marker-accessibility (multiple markers)
+  
+  // The location of the markers, title and name is defined
   const citytour = [
     {
       position: { lat: 43.654857466919424, lng: -79.37862431071375 },
       title: "Toronto",
-      content:"The major airport of the country",
+      namepart:"The major airport of the country",
+      
+      
     },
     {
       position: { lat:43.568228, lng: -79.599887 },
       title: "Mississauga",
-      content:"Sauga",
+      namepart:"Sauga",
+      
     },
     {
       position: { lat: 43.26218684261511, lng: -79.89242586992502 }, 
       title: "Hamilton",
-      content:"The Steeltown",
+      namepart:"The Steeltown",
+      
     },
     {
       position: { lat:42.98285094786302, lng: -81.2424152756183 }, 
       title: "London",
-      content:"The Forest City",
+      namepart:"The Forest City",
+      
     },
     {
       position: { lat: 43.35743844204077, lng: -81.48136790643197 }, 
       title: "Exeter",
-      content:"The White Wonder",
+      namepart:"The White Wonder",
+      
     },
   ];
   //the content is the names for the cities as seen in https://en.wikipedia.org/wiki/List_of_city_nicknames_and_slogans_in_Canada#Ontario, https://en.wikipedia.org/wiki/Exeter,_Ontario
-  //https://developers.google.com/maps/documentation/javascript/examples/polyline-simple line feature
+  //source: https://developers.google.com/maps/documentation/javascript/examples/polyline-simple line feature
 
-  const flightPlanCoordinates = [
+  const carRouteCoordinates = [
     { lat: 43.654857466919424, lng: -79.37862431071375  },
     { lat: 43.582990436911444, lng: -79.7288769449274  },
     { lat: 43.568228, lng: -79.599887 },
@@ -83,15 +114,17 @@
     { lat: 42.98285094786302, lng: -81.2424152756183 },
     { lat: 43.35743844204077, lng: -81.48136790643197 },
   ];
-  const flightPath = new google.maps.Polyline({
-    path: flightPlanCoordinates,
+  //connects the coordinates to path to setMap
+  const carPath = new google.maps.Polyline({
+    path: carRouteCoordinates,
     geodesic: true,
     strokeColor: "#0000FF",
     strokeOpacity: 1.0,
     strokeWeight: 5,
   });
 
-  
+  //source: https://developers.google.com/maps/documentation/javascript/examples/advanced-markers-graphics#maps_advanced_markers_graphics-javascript
+  //div created for placing the icon cookie
   const icon = document.createElement("div"); 
   icon.innerHTML = '<i class="fa fa-cookie-bite fa-lg"></i>';
   const cookiePin = new PinElement({
@@ -100,6 +133,7 @@
     background: "#FFD514",
     borderColor: "#000000",
   });
+  //div created for placing the icon pizza
   const cookie = document.createElement("div");
    cookie.innerHTML = '<i class="fa fa-pizza-slice fa-lg"></i>';
   const pizzaPin = new PinElement({
@@ -110,25 +144,27 @@
   });
 
   // Create an info window to share between markers.
-  //const infoWindow = new InfoWindow();
+  const infoWindow = new InfoWindow();
 
-  // Create the markers.
-  citytour.forEach(({ position, title,  content }, i) => {
+  // Create the markers looping through the position,title and name part.
+  citytour.forEach(({ position, title,  namepart }, i) => {
     const pin = new PinElement({
       glyph: `${i + 1}`,
     });
     const marker = new AdvancedMarkerElement({
       position,
       map,
-      title: `${i + 1}. ${title +" : "+ content}`,
+      title: `${i + 1}. ${title +" : "+ namepart}`,
       content: pin.element,
     });
-const faMarker = new AdvancedMarkerElement({
+    //Adding the pizza marker to the map
+  const faMarker = new AdvancedMarkerElement({
     map,
     position: { lat: 43.582990436911444, lng: -79.7288769449274 },
     content: pizzaPin.element,
     title: "The food break.",
   });
+  //Adding the coookie marker to the map
   const snackMarker = new AdvancedMarkerElement({
     map,
     position: { lat: 42.92651877106676, lng: -81.2790150736179  }, 
@@ -139,13 +175,13 @@ const faMarker = new AdvancedMarkerElement({
     // Add a click listener for each marker, and set up the info window.
     marker.addListener("click", ({ domEvent, latLng }) => {
       const { target } = domEvent;
-
       infoWindow.close();
       infoWindow.setContent(marker.title);
       infoWindow.open(marker.map, marker);
     });
-  });
-  flightPath.setMap(map);
+  
+   });
+  carPath.setMap(map);
 }
 
 initMap();
@@ -154,9 +190,25 @@ initMap();
 
 </head>
 <body>
+  <h1 id="heading">My First Day in Canada</h1>
+  <p class="para"> These are the places I travelled on the first in Canada </p>
   <div id="map"></div>
   <script src ="https://maps.googleapis.com/maps/api/js?key=AIzaSyCM-WWHYHIKY-do4kquMy9Z4wQaQx51AuE&callback=initMap&v=weekly"async></script>
-  <h1 class="heading">My First Day in Canada</h1>
-  <p> These are the places I travelled on the first in Canada </p>
+  <h2 class="title">Toronto</h2>
+  <!--source: https://en.wikipedia.org/wiki/Toronto -->
+  <p class="paragraph"> Toronto is the most populous city in Canada and the capital city of the Canadian province of Ontario</p>
+  <h2 class="title">Mississauga</h2>
+  <!-- source: https://en.wikipedia.org/wiki/Mississauga -->
+  <p class="paragraph">Mississauga is the seventh-most populous municipality in Canada, third-most in Ontario</p>
+  <h2 class="title">Hamilton</h2>
+  <!-- source:https://en.wikipedia.org/wiki/Hamilton,_Ontario -->
+  <p class="paragraph">Hamilton is a port city in the Canadian province of Ontario</p>
+  <h2 class="title">London</h2>
+  <!-- source:https://en.wikipedia.org/wiki/London,_Ontario -->
+  <p class="paragraph">London is a city in southwestern Ontario, Canada, along the Quebec City–Windsor Corridor.</p>
+  <h2 class="title">Exeter</h2>
+  <!-- source:https://en.wikipedia.org/wiki/Exeter,_Ontario -->
+  <p class="paragraph">Exeter is a community in the municipality of South Huron, in the southern portion of Huron County, Ontario.</p>
+
 </body>
 </html>
